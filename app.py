@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
-
+import numpy as np
 # Load the trained model and imputer
 model = joblib.load('logistic_regression_model.pkl')
 imputer = joblib.load('simple_imputer.pkl')
